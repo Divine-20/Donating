@@ -16,7 +16,7 @@ function HeaderPage() {
           </div>
           <div className='menu'>
               <ul>
-              <li><a aria-activedescendant='active' href='/home'>Home</a></li>
+              <li><a href='/home'>Home</a></li>
               <li><a href='/About'>About</a></li>
               <li><a href='/Contact'>contact</a></li>
               <li><a href='/key-programs'>Key-programs</a></li>
