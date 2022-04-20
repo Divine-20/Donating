@@ -245,7 +245,10 @@ textarea{
 .mybtns{
   display: block;
 }
-img{
+.divImage{
+  background-image: url('simon (2).jpg');
+  background-position: center;
+  background-size: cover;
   border-radius: 100%;
   height: 90vh;
   width: 40vw;
