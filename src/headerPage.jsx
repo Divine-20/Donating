@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // import Donation from './Donation';
 
 function HeaderPage() {
@@ -16,11 +16,11 @@ function HeaderPage() {
           </div>
           <div className='menu'>
               <ul>
-              <li><a href='/home'>Home</a></li>
-              <li><a href='/About'>About</a></li>
-              <li><a href='/Contact'>contact</a></li>
-              <li><a href='/key-programs'>Key-programs</a></li>
-              <li><a href='/how-to-help'>How-to-help</a></li>
+              <li><Link to='/home'>Home</Link></li>
+              <li><Link to='/About'>About</Link></li>
+              <li><Link to='/Contact'>contact</Link></li>
+              <li><Link to='/key-programs'>Key-programs</Link></li>
+              <li><Link to='/how-to-help'>How-to-help</Link></li>
               <li><button className='donate'>Donate</button></li>
               
           </ul>
