@@ -27,7 +27,7 @@ function LandingPage() {
     <button className='updates'>Updates</button>
 
    </div>
-   <img src='simon (2).jpg' alt='prac.jpg' />
+   <img src='simon (2).jpg' alt='simon (2).jpg' />
    </div>
   </div>
   <FooterPage />
