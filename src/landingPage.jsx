@@ -3,6 +3,7 @@ import React from 'react'
 import HeaderPage from './headerPage';
 import { useNavigate } from 'react-router-dom';
 import FooterPage from './footerPage';
+import simon1 from  '.images/simon1.jpg';
 
 function LandingPage() {
 
@@ -27,7 +28,7 @@ function LandingPage() {
     <button className='updates'>Updates</button>
 
    </div>
-   <img src={'simon (2).jpg'} alt='simon (2)' />
+   <img src={simon1} alt='simon1' />
    </div>
   </div>
   <FooterPage />
