@@ -16,7 +16,7 @@ function HeaderPage() {
           </div>
           <div className='menu'>
               <ul>
-              <li><Link to='/home'>Home</Link></li>
+              <li><Link to='/'>Home</Link></li>
               <li><Link to='/About'>About</Link></li>
               <li><Link to='/Contact'>contact</Link></li>
               <li><Link to='/key-programs'>Key-programs</Link></li>
