@@ -125,7 +125,7 @@ img{
   }
 }
 .foot{
-  height: 71vh;
+  height: 55vh;
   width: 100%;
   padding-top: 2em;
   margin-top: 3em;
@@ -255,7 +255,7 @@ textarea{
   margin-left: 35%;
  /* position: absolute;
  right: 10%; */
-margin-top: -12em;
+margin-top: -9em;
 }
 .addImg{
   display: flex;
@@ -267,10 +267,15 @@ margin-top: -12em;
   border-radius: 20px;
   border: none;
   background-color: #cc9921;
-  color: white;
+  color: black;
   margin-top: 1em;
 
 
+}
+.send:hover{
+  background-color: white;
+  color: #cc9921;
+  border: 1px solid #cc9921;
 }
 .mainDiv{
   background-image: url("simon (3).jpg");
@@ -512,7 +517,7 @@ background-image: url("muhammad-muzamil-7S9x9US26Ow-unsplash.jpg");
   width: 300px;
   padding-top: 2em;
   background-color: white;
- margin-top: 17em
+  margin-top: 21em;
  
 }
 

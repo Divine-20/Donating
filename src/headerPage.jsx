@@ -1,13 +1,11 @@
 import React from 'react'
 import { useNavigate, Link } from "react-router-dom";
-// import Donation from './Donation';
+// import Donation from './donation';
 
-function HeaderPage() {
-  // const navigate = useNavigate();
+function HeaderPage(props) {
+  const navigate = useNavigate();
 
-  // const donate= () => {
-  //   navigate("/Donation")
-  // }
+
   return (
     <div  className='mainMenu'>
       <nav>
@@ -21,7 +19,7 @@ function HeaderPage() {
               <li><Link to='/Contact'>contact</Link></li>
               <li><Link to='/key-programs'>Key-programs</Link></li>
               <li><Link to='/how-to-help'>How-to-help</Link></li>
-              <li><button className='donate'>Donate</button></li>
+              <li><button onClick={()=> navigate('/donate')} className='donate'>Donate</button></li>
               
           </ul>
           

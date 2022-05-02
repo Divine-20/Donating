@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderPage from './headerPage'
 
 import FooterPage from './footerPage'
-function Donations() {
+function Donate() {
      
   return (
     <div>
@@ -13,7 +13,7 @@ function Donations() {
         <p>You can make charitable donations to our team by filling out the form below.</p>
 
         <form>
-            
+            <input type='text' />
         </form>
     </div>
       <FooterPage />
@@ -21,4 +21,4 @@ function Donations() {
   )
 }
 
-export default Donations
+export default Donate;
