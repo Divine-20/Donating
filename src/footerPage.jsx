@@ -1,5 +1,6 @@
 import React from 'react'
 // import FontAwesome from 'react-fontawesome';
+import {FaFacebookMessenger,FaTwitter } from 'react-icons/fa'
 
 function FooterPage() {
   return (
@@ -25,8 +26,8 @@ function FooterPage() {
             <li>Social Media</li>
             <div className='icons'>
           <ul>
-            <li><i className="fab fa-facebook-square"></i></li>
-            <li><i className="fab fa-twitter"></i></li>
+            <li><i className="fab fa-facebook-square"><FaFacebookMessenger /></i></li>
+            <li><i className="fab fa-twitter-square"><FaTwitter /></i></li>
             <li><i className="fab fa-pinterest"></i></li>
             <li><i className="fab fa-instagram"></i></li>
           </ul>
