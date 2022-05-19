@@ -1091,4 +1091,12 @@ padding-top: 1em;
   .formDetails .submitResp{
     width: 20vw;
   }
+ 
+
+}
+@media(max-width : 820px) {
+  .foot .fheads li{
+    display: block;
+
+  }
 }

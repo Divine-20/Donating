@@ -2,8 +2,7 @@ import React,{ useState } from 'react'
 import  mtn from './images/mtn.png'
 import  airtelmomo from './images/airtelmomo.png'
 import tigo from './images/tigo.png'
-// import visa from './images/visa.png'
-// import paypal from './images/paypal.png'
+
 
 
 function DonateMoney(props) { 
@@ -14,7 +13,9 @@ function DonateMoney(props) {
       'amountMoney' : e.target.value
     }
     document.querySelector('.amountMoney').value = amountChosen.amountMoney
+    document.querySelector('.totalMount').value = amountChosen.amountMoney
   }
+  
     
   return props.trigger ? (
     <div className='backDonate'>
@@ -52,7 +53,7 @@ function DonateMoney(props) {
               <button className='dollar'  onClick={makePayment}  value={50000}>50000RwF</button>
               </li>
               <li>
-              <button className='customMount'>Custom amount</button>
+              <button className='customMount' onClick={makePayment}>Custom amount</button>
               </li>
             </ul>
 
