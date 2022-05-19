@@ -1,20 +1,19 @@
-import React from 'react'
+import React,{ useState} from 'react'
 // import ImageResponsive from 'react-image-responsive';
 import HeaderPage from './headerPage';
 import { useNavigate } from 'react-router-dom';
 import FooterPage from './footerPage';
 
 function LandingPage() {
-
   const navigate = useNavigate();
-    const about=() => {
+    // const about=() => {
       
-    }
+    // }
   
   return (
     <div>
     <div className='myHead'>
-    <HeaderPage />
+    <HeaderPage/>
     
       <h1>WELCOME TO <span>HNCF!</span></h1>
       <p>HNCF is a web app for helping<br />children in need especially school<br />

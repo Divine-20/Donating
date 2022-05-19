@@ -1,29 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import HeaderPage from './headerPage'
 import FooterPage from './footerPage'
-import { useLinkClickHandler } from 'react-router-dom'
-import { useState } from 'react/cjs/react.production.min'
+// import { useLinkClickHandler } from 'react-router-dom'
+
 function Contact() {
-   const [value, setValue] = React.useState('');
-   const [emailValue, setEmailValue] = React.useState('');
-   const [commentValue, setCommentValue] = React.useState('');
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+   const [comment, setComment] = useState('');
+
    const handleNameChange = (event)=> {
-     setValue(event.target.value);
+     setName(event.target.value);
+     console.log(name);
    }
    const handleEmailChange = (event)=>{
-     setEmailValue(event.target.emailValue);
+     setEmail(event.target.value);
+     console.log(email);
    }
    const handleCommentChange =(event) =>{
-     setCommentValue(event.target.value)
+     setComment(event.target.value)
+     console.log(comment);
    }
   const handleSubmit = (event)=>{
-    
-      setValue('')
+      event.preventDefault();
+      setName('');
+      setComment('');
+      setEmail('');
       
-      setCommentValue('')
-      setEmailValue('')
-      event.preventDefault()
-    
   }
   return (
     <div className='contact'>
@@ -33,10 +35,10 @@ function Contact() {
      <div className='contacting'>
        <h2>Contact us</h2>
        <form onSubmit={handleSubmit}>
-     <input type='text' value = {value} onChange={handleNameChange} name='name' placeholder='Enter your names' />
-     <input type='email' value = {emailValue} onChange={handleEmailChange} name='email' placeholder='Enter your email' />
-     <textarea rows='4' cols='30' value={commentValue} onChange={handleCommentChange}></textarea>
-     <button className='submit'>Submit</button>
+     <input type='text' value = {name} onChange={handleNameChange} name='name' placeholder='Enter your names' />
+     <input type='email' value = {email} onChange={handleEmailChange} name='email' placeholder='Enter your email' />
+     <textarea rows='4' cols='30' value={comment} onChange={handleCommentChange}></textarea>
+     <button className='submit' type='submit'>Submit</button>
      </form>
     </div>
     <FooterPage /> 

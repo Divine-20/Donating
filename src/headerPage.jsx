@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useState} from 'react'
 import { useNavigate, Link } from "react-router-dom";
 // import Donation from './donation';
-
+import {FaBars,FaTimes } from 'react-icons/fa'
 function HeaderPage(props) {
   const navigate = useNavigate();
+ const[isclicked, setIsClicked] = useState(false);
 
-
-  return (
+  return(
     <div  className='mainMenu'>
       <nav>
           <div>
               <h2 className='head'>HNCF</h2>
           </div>
           <div className='menu'>
-              <ul>
-              <li><Link to='/'>Home</Link></li>
+              <ul className={isclicked ? "tmenu" : "nav-links"}
+              onClick={()=> setIsClicked(true)}
+              >
+              <li><Link to='/' >Home</Link></li>
               <li><Link to='/About'>About</Link></li>
               <li><Link to='/Contact'>contact</Link></li>
               <li><Link to='/key-programs'>Key-programs</Link></li>
@@ -24,7 +26,15 @@ function HeaderPage(props) {
           </ul>
           
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="24 24 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+        
+          <button onClick={()=> {setIsClicked(!isclicked)}} className='menu-icon'>
+            { isclicked ? (
+            
+            <i className="fab fa-times-square" id='svgIcon'><FaTimes /></i>
+            ) : (
+              <i className="fab fa-bars-square" id='svgIcon'><FaBars /></i>
+            )}
+            </button>
       </nav>
     </div>
   )

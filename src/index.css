@@ -81,33 +81,28 @@ nav {
 nav h2{
   padding-left: 1.3em;
 }
-svg{
+#svgIcon{
   height: 24px;
   display: none;
 }
 
 @media(max-width: 890px){
-  svg{
+  #svgIcon {
     display: block;
     margin-right: 3em;
   }
   .addImg{
     display: block;
   }
-img{
-  height: 20vh;
-  width: 10vh;
-}
-
-
-
- .menu{
-    position: absolute;
-    top: 0;
-    right: -100%;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px 20px;
-    height: 100%;
+ 
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  right: -100%;
+  padding: 10px 20px;
+  height: -100%;
+  margin-top: 5em;
 
   }
   .menu ul{
@@ -120,7 +115,7 @@ img{
     color: black;
   }
 }
-@media(max-width: 300px){
+@media(max-width: 890px){
   .fheads{
     display: block;
   }
@@ -133,12 +128,18 @@ img{
   background-color: #f3dda9;
   bottom: 0%; 
 }
+.fheads li{
+  font-size: 0.5cm;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
 
 
 .fheads ul{
   display: flex;
   list-style: none;
   margin: 30px 2px;
+ 
   justify-content: space-around;
 }
 .fmenu ul {
@@ -148,16 +149,25 @@ img{
 }
 .fmenu ul li a{
   text-decoration: none;
+  font-size: 0.5cm;
   color: black;
 }
+.fmenu ul li a:hover{
+  cursor: pointer;
+  color: chocolate;
+  text-decoration: 2px underline black;
+}
 h4{
-  font-size: 15px;
+  font-size: 0.5cm;
   margin-top: 30px;
   font-weight: normal;
 }
 .medias{
   height: 24px;
   width: 24px;
+}
+.fheads button{
+  display: block;
 }
 label{
   display: block;
@@ -326,18 +336,21 @@ h3{
   height: 7vh;
   width: 30vw;
   border: 1px solid #cc9921;
-  margin-top: 2em;
+  margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
 }
+
 .contacting h2{
   text-align: center;
   padding-top: 1em;
 }
 .contacting textarea{
   border:1px solid #cc9921;
-  margin: 2em 6em; 
+  /* margin: 2em 6em;  */
   resize: none;
+  margin-left: auto;
+  margin-right: auto;
  width: 30vw;
  height: 20vh;
 }
@@ -351,7 +364,8 @@ h3{
 
 @media(max-width: 830px){
   .contacting textarea{
-    margin-left: 3em;
+    margin-left: auto;
+    margin-right: auto;
     width: 30vw;
   }
   .contacting .submit{
@@ -686,37 +700,7 @@ background-position: center;
 .moreInfo1 h3{
   padding-top: 5em;
 }
-/* .donateForm input{
- display: block;
- margin-left: auto;
- margin-right: auto;
 
- border: 1px solid #cc9921;
- width: 30vw;
- height: 6vh;
-}
-.donateForm h1{
-  padding-top: 6em;
-  text-align: center;
-}
-.donateForm p{
-  padding-top: 2em;
-  text-align: center;
-}
-.donateForm label{
- 
- text-align: center;
- padding-top: 1em;
-}
-input[type="submit"]{
- margin-top: 2em;
- text-align: center;
-
-}
-input[type="radio"]{
-  height: 3em;
-  
-} */
 .formDetails{
   height: 80vh;
   margin-top: 5%;
@@ -802,7 +786,7 @@ input[type="radio"]{
   text-align: center;
 }
 .donateMoney{
-  height: 70vh;
+  height: 72vh;
   width: 40vw;
   background-color: white;
   margin-left: auto;
@@ -817,9 +801,9 @@ input[type="radio"]{
 
 }
 img{
-  height: 4em;
-  width: 4em;
-  margin-left: 4em;
+  height: 5em;
+  width: 7em;
+  margin-left: 6em;
   margin-top: 2em;
 }
 .typeMoney{
@@ -1002,11 +986,109 @@ position: absolute;
    height: 4vh;
    font-size: 30px;
 }
-.inputMoney span{
-  background-color: #f7f5f0;
+
+.icons{
+padding-top: 1em;
 }
-.icons .fab{
-height: 3vh;
-width: 3vh;
-background-color: black;
+.fab{
+  display: block;
+ font-size: 0.7cm;
+ color: black;
+  width: 5vh;
+ 
+}
+.fab:hover{
+  color: chocolate;
+  transition: 1s ease-in-out;
+}
+.menu-icon{
+ display: block;
+ position: absolute;
+ background-color: white;
+ font-size: 30px;
+ color: black;
+ border: none;
+ outline: none;
+ right: 10px;
+ top: 1.5em;
+}
+@media(max-width: 890px){
+  .tmenu {
+   position: absolute;
+    margin-top: 1em;
+    right: 55em;
+    background-color: #cc9921;
+    padding-left: 2em;
+    padding-top: 1em;
+     opacity: 0.9;
+    line-height: 2;
+
+  }
+  .tmenu button{
+    background-color: white;
+    color: #cc9921;
+  }
+  .tmenu button:hover{
+    cursor: pointer;
+    background-color: #cc9921;
+    color: black;
+    border: 1px solid black;
+  }
+ .tmenu li a:hover{
+  cursor: pointer;
+  /* text-decoration: underline white; */
+  /* border-bottom: 1px  solid white; */
+  color: white;
+  transition: 3s;
+ }
+
+}
+.fheads label{
+  padding-top: 1em;
+}
+.donateMoney h2{
+  text-align: center;
+  margin-top: 10px;
+}
+@media(max-width:1660px){
+  .donateMoney{
+    height: 80vh;
+
+  }
+}
+@media(max-width:1042px){
+  .donateMoney{
+    height: auto;
+  }
+  .dollar{
+    width: 20vw;
+    margin-top: 2px;
+  }
+  .donateMoney input{
+    width: 16vw;
+  }
+  .customMount{
+    width: 20vw;
+  }
+  .totalMoney{
+   margin-top: 1em;
+  }
+  .totalMount{
+    margin-left: 3em;
+  }
+  .donateNow{
+    margin-bottom: 1em;
+    margin-left: 5em;
+    width: 20vw;
+  }
+  .close{
+    width: 40px;
+  }
+  .formDetails .submit{
+    width: 20vw;
+
+  }
+  .formDetails .submitResp{
+    width: 20vw;
+  }
 }
